@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>vignesh@portfolio: ~</title>
+<meta name="description" content="Vignesh's portfolio — an interactive terminal you can ask questions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="crt-overlay" aria-hidden="true"></div>
+
+<main class="terminal" id="terminal">
+
+  <!-- Title bar -->
+  <div class="titlebar">
+    <div class="dots"><span></span><span></span><span></span></div>
+    <div class="titlebar-label">vignesh@portfolio — 120×34</div>
+  </div>
+
+  <div class="terminal-body" id="terminal-body">
+
+    <!-- Boot sequence -->
+    <section class="boot-log" id="boot-log" aria-live="polite"></section>
+
+    <!-- Hero / bio -->
+    <section class="block hidden" id="bio-block">
+      <p class="prompt-line"><span class="prompt">$</span> <span class="cmd">cat about.md</span></p>
+      <div class="bio">
+        <h1>Vignesh</h1>
+        <p class="tagline">Grade 11 builder — AI tools, local LLMs, games, and things people actually use.</p>
+        <p class="bio-text">
+          I build small, real things: multiplayer web games, a fully local AI coding
+          setup running on a CPU-only laptop, interactive pages for people I care about,
+          and — most recently — an AI wellbeing companion designed the hard way, with
+          real research first.
+        </p>
+        <p class="bio-text">This page is a live terminal. Scroll, or ask it something below.</p>
+      </div>
+    </section>
+
+    <!-- Projects list -->
+    <section class="block hidden" id="projects-block">
+      <p class="prompt-line"><span class="prompt">$</span> <span class="cmd">ls projects/</span></p>
+      <div class="project-grid" id="project-grid"></div>
+    </section>
+
+    <!-- MindEase case study -->
+    <section class="block hidden" id="mindease-block">
+      <p class="prompt-line"><span class="prompt">$</span> <span class="cmd">open projects/mindease --verbose</span></p>
+      <div class="case-study" id="case-study"></div>
+    </section>
+
+    <!-- Chat prompt -->
+    <section class="block hidden" id="chat-block">
+      <p class="prompt-line"><span class="prompt">$</span> <span class="cmd">./ask-vignesh</span></p>
+      <div class="chat-window" id="chat-window">
+        <div class="chat-log" id="chat-log">
+          <p class="chat-msg system">AI &gt; Hey — I'm a small assistant trained on Vignesh's actual projects. Ask me what he's built, what MindEase is, or how he set up local AI on his laptop.</p>
+        </div>
+        <form class="chat-input-row" id="chat-form" autocomplete="off">
+          <span class="prompt">&gt;</span>
+          <input type="text" id="chat-input" placeholder="ask something..." aria-label="Ask a question" />
+          <button type="submit" aria-label="Send">enter</button>
+        </form>
+      </div>
+    </section>
+
+    <p class="prompt-line closing hidden" id="closing-line">
+      <span class="prompt">$</span> <span class="cursor" aria-hidden="true">▉</span>
+    </p>
+
+  </div>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
