@@ -42,22 +42,38 @@ const MINDEASE = {
     },
     {
       h: "research",
-      body: `Ran a real student survey, then built an empathy map to separate
-      what students say from what they actually feel and need — surfacing that
-      most students wanted something private and quick, not another app to manage.`
+      body: `Ran a real survey of 11 peers rather than relying on assumptions.
+      Average self-reported stress came out to 4.0 out of 5, and exams were
+      cited as the cause by 91% of respondents (10 of 11) — sleep issues were
+      the only other cause mentioned. Respondents were split almost evenly on
+      self-awareness: some notice stress building before it peaks, most only
+      recognize it afterward or aren't sure. Just over half hadn't talked to
+      anyone about academic stress at all.`
+    },
+    {
+      h: "validation",
+      body: `82% of respondents (9 of 11) said they would use or might use an
+      app that checks in on their stress — only 2 said no. Built an empathy
+      map from these responses to separate what students said from what they
+      actually needed, which surfaced a clear signal: students wanted
+      something private and low-effort, not another app demanding daily
+      logging.`
     },
     {
       h: "design",
       body: `Used the Design Thinking framework end to end: define, ideate,
-      prototype. Produced app mockups and a full written deliverable before
-      writing any code — the build decisions came out of the research, not the
-      other way round.`
+      prototype. Produced app mockups and a full written deliverable, with
+      the build decisions coming directly out of the survey data rather than
+      assumptions about what students "should" want.`
     },
     {
       h: "what I'd change",
-      body: `Given more time, I'd user-test the mockups with real students before
-      finalizing flows, and instrument the eventual app to see which check-in
-      format actually gets used, not just which one tests well.`
+      body: `The sample is small (11 responses) and self-selected from one
+      friend group, so I'd want a larger, more varied sample before trusting
+      the numbers too far. I'd also user-test the mockups directly with
+      students before finalizing flows, and instrument the eventual app to
+      see which check-in format actually gets used, not just which one
+      tests well on paper.`
     }
   ]
 };
@@ -70,7 +86,7 @@ const MINDEASE = {
 const CHAT_KB = [
   {
     keywords: ["mindease", "wellbeing", "sdg"],
-    answer: "MindEase is Vignesh's AI Capstone — a wellbeing companion for students, built on real survey research and an empathy map before any code was written. Scroll up to the case study for the full breakdown."
+    answer: "MindEase is Vignesh's AI Capstone — a wellbeing companion for students. It's built on a real 11-person peer survey (91% cited exams as their top stress cause, 82% said they'd use a check-in app) plus an empathy map, not just assumptions. Scroll up to the case study for the full breakdown."
   },
   {
     keywords: ["local", "ollama", "llm", "qwen"],
