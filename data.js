@@ -17,10 +17,10 @@ const PROJECTS = [
     link: "#"
   },
   {
-    file: "birthday-card.html",
-    desc: "Interactive animated birthday page — Spotify-style music player, animated petals, 3D cake.",
-    tags: ["CSS 3D", "Web Audio"],
-    link: "https://github.com/v1gn3shh/a16"
+    file: "earth-in-hands.js",
+    desc: "3D Earth you control with hand gestures — pinch to rotate, fist to zoom in, open palm to zoom out, tracked live through your webcam.",
+    tags: ["Three.js", "MediaPipe Hands"],
+    link: "https://v1gn3shh.github.io/earthinhands/"
   },
   {
     file: "mindease/",
@@ -91,6 +91,10 @@ const CHAT_KB = [
   {
     keywords: ["local", "ollama", "llm", "qwen"],
     answer: "Vignesh runs a full local AI coding setup on a CPU-only Windows laptop — Ollama serving Qwen2.5-Coder, wired into VS Code through Codex CLI and Continue.dev. No cloud API needed for day-to-day coding."
+  },
+  {
+    keywords: ["earth", "hand", "gesture", "mediapipe", "three.js"],
+    answer: "Earth in Hands is a 3D globe you control entirely with hand gestures — pinch and move to rotate, make a fist to zoom in, open your palm to zoom out — tracked live through your webcam using MediaPipe Hands and rendered with Three.js."
   },
   {
     keywords: ["game", "multiplayer", "tech-guess"],
